@@ -17,7 +17,7 @@ const IncomingHttpHeaders3 = {
 describe("ApiKey correctly formatted", () => {
   test("ApiKey is correct", () => {
     const result = getAPIKey(IncomingHttpHeaders1)
-    expect(result).toBe("1202458Ftge");
+    expect(result).toBe("wrong_value");
   });
 
   test("Empty header", () => {
