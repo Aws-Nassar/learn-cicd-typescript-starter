@@ -11,13 +11,13 @@ const IncomingHttpHeaders2 = {
 };
 
 const IncomingHttpHeaders3 = {
-  authorization: "Bearer 1202458Ftge",
+  authorization: "Bearer 120250589",
 };
 
 describe("ApiKey correctly formatted", () => {
   test("ApiKey is correct", () => {
     const result = getAPIKey(IncomingHttpHeaders1)
-    expect(result).toBe("1202458Ftge");
+    expect(result).toBe("120250589");
   });
 
   test("Empty header", () => {
