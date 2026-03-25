@@ -19,7 +19,8 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: npm ci --omit=optional
+        run: |
+          npm install --no-optional
       
       - name: Run test
         run: npm run test
